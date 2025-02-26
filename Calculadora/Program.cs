@@ -38,7 +38,16 @@
                         Console.WriteLine($"Seu resultado é: {resultado}");
                     }
                     break;
+            
+
+            case 3:
+                {
+                    resultado = num1 * num2;
+                    Console.WriteLine($"Seu resultado é: {resultado}");
+                }
+                break;
             }
+
 
 
 
