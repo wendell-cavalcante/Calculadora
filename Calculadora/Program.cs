@@ -12,21 +12,34 @@
             Console.WriteLine("3 - Multiplicação ");
             Console.WriteLine("4 - Divisão\n ");
 
-            Console.ReadLine();
-
             int operacao = int.Parse(Console.ReadLine());
+
+            if (operacao == 1) Console.WriteLine($"Função selecionada soma ");
+            
+                
 
             // Números solicitados pelo usuario
 
-            Console.WriteLine("Digite o primerio número");
+            Console.Write("Digite o primerio número: ");
             int num1 = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Digite o segundo número");
+            Console.Write("Digite o segundo número: ");
             int num2 = int.Parse(Console.ReadLine());
 
             // Realização das operações
 
-            
+            int resultado;
+
+            switch (operacao)
+            {
+                case 1:
+                    {
+                        resultado = num1 + num2;
+                        Console.WriteLine($"Seu resultado é: {resultado}");
+                    }
+                    break;
+            }
+
 
 
 
