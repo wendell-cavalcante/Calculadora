@@ -14,11 +14,12 @@
 
             int operacao = int.Parse(Console.ReadLine());
 
+            // Exibição das Função
+
             if (operacao == 1) Console.WriteLine($"Função SOMA ");
             if (operacao == 2) Console.WriteLine($"Função SUBTRAÇÃO ");
             if (operacao == 3) Console.WriteLine($"Função MULTIPLICAÇÃO ");
             if (operacao == 4) Console.WriteLine($"Função DIVISÃO ");
-
 
 
             // Números solicitados pelo usuario
