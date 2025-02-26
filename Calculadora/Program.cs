@@ -36,9 +36,19 @@
 
             switch (operacao)
             {
-                case 1:
+                case 2:
                     {
-                        resultado = num1 + num2;
+                        resultado = num1 - num2;
+                        Console.WriteLine($"Seu resultado é: {resultado}");
+                    }
+                    break;
+            }
+
+            switch (operacao)
+            {
+                case 4:
+                    {
+                        resultado = num1 / num2;
                         Console.WriteLine($"Seu resultado é: {resultado}");
                     }
                     break;
