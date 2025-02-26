@@ -26,7 +26,7 @@
 
             // Realização das operações
 
-            int resultado;
+            
 
 
 
