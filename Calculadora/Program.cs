@@ -22,7 +22,7 @@
             if (operacao == 4) Console.WriteLine($"\nFunção DIVISÃO \n");
             if (operacao > 4 || operacao < 1)
             {
-                Console.WriteLine("Opção inválida");
+                Console.WriteLine("Opção inválida ");
                 return;
             }
 
@@ -54,7 +54,7 @@
                         Console.WriteLine($"Seu resultado é: {resultado}");
                     }
                     break;
-          
+
                 case 3:
                     {
                         resultado = num1 * num2;
@@ -79,5 +79,7 @@
             }
         }
     }
+}
+
 
 
