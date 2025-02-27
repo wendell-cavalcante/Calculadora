@@ -62,9 +62,8 @@
                         Console.WriteLine($"Seu resultado é: {resultado}");
                     }
                     break;
-            
-
-            case 4:
+               
+                case 4:
                     if (num2 != 0)
                     {
                         resultado = num1 / num2;
