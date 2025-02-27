@@ -14,9 +14,13 @@
 
             int operacao = int.Parse(Console.ReadLine());
 
-            if (operacao == 1) Console.WriteLine($"Função selecionada soma ");
-            
-                
+            // Exibição das Função
+
+            if (operacao == 1) Console.WriteLine($"Função SOMA ");
+            if (operacao == 2) Console.WriteLine($"Função SUBTRAÇÃO ");
+            if (operacao == 3) Console.WriteLine($"Função MULTIPLICAÇÃO ");
+            if (operacao == 4) Console.WriteLine($"Função DIVISÃO ");
+
 
             // Números solicitados pelo usuario
 
@@ -38,15 +42,27 @@
                         Console.WriteLine($"Seu resultado é: {resultado}");
                     }
                     break;
-            
+            }
 
-            case 3:
-                {
-                    resultado = num1 * num2;
-                    Console.WriteLine($"Seu resultado é: {resultado}");
-                }
-                break;
+            switch (operacao)
+            {
+                case 2:
+                    {
+                        resultado = num1 - num2;
+                        Console.WriteLine($"Seu resultado é: {resultado}");
+                    }
+                    break;
+            }
 
+            switch (operacao)
+            {
+                case 3:
+                    {
+                        resultado = num1 * num2;
+                        Console.WriteLine($"Seu resultado é: {resultado}");
+                    }
+                    break;
+               
                 case 4:
                     if (num2 != 0)
                     {
@@ -62,6 +78,7 @@
                     Console.WriteLine("Operação inválida!");
                     break;
             }
+        }
 
 
 
@@ -71,4 +88,4 @@
 
         }
     }
-}
+
