@@ -55,10 +55,7 @@
                         Console.WriteLine($"Seu resultado é: {resultado}");
                     }
                     break;
-            }
-
-            switch (operacao)
-            {
+          
                 case 3:
                     {
                         resultado = num1 * num2;
