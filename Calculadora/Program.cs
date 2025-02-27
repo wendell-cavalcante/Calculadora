@@ -65,12 +65,21 @@
             
 
             case 4:
-                {
-                    resultado = num1 / num2;
-                    Console.WriteLine($"Seu resultado é: {resultado}");
-                }
-                break;
+                    if (num2 != 0)
+                    {
+                        resultado = num1 / num2;
+                        Console.WriteLine("Resultado da divisão: " + resultado);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Erro! Divisão por zero não permitida.");
+                    }
+                    break;
+                default:
+                    Console.WriteLine("Operação inválida!");
+                    break;
             }
+        }
 
 
 
@@ -80,4 +89,4 @@
 
         }
     }
-}
+
