@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             // Base da seleção de operação
-            
+
             Console.WriteLine("Qual tipo de operação você quer usar? ");
             Console.WriteLine("1 - Soma ");
             Console.WriteLine("2 - Subtração ");
@@ -14,12 +14,17 @@
 
             int operacao = int.Parse(Console.ReadLine());
 
-            // Exibição das Função
+            // Exibição das Função // Opção Inválida
 
-            if (operacao == 1) Console.WriteLine($"Função SOMA ");
-            if (operacao == 2) Console.WriteLine($"Função SUBTRAÇÃO ");
-            if (operacao == 3) Console.WriteLine($"Função MULTIPLICAÇÃO ");
-            if (operacao == 4) Console.WriteLine($"Função DIVISÃO ");
+            if (operacao == 1) Console.WriteLine($"\nFunção SOMA \n");
+            if (operacao == 2) Console.WriteLine($"\nFunção SUBTRAÇÃO \n");
+            if (operacao == 3) Console.WriteLine($"\nFunção MULTIPLICAÇÃO \n");
+            if (operacao == 4) Console.WriteLine($"\nFunção DIVISÃO \n");
+            if (operacao > 4 || operacao < 1)
+            {
+                Console.WriteLine("Opção inválida");
+                return;
+            }
 
 
             // Números solicitados pelo usuario
@@ -42,27 +47,21 @@
                         Console.WriteLine($"Seu resultado é: {resultado}");
                     }
                     break;
-            }
 
-            switch (operacao)
-            {
                 case 2:
                     {
                         resultado = num1 - num2;
                         Console.WriteLine($"Seu resultado é: {resultado}");
                     }
                     break;
-            }
-
-            switch (operacao)
-            {
+          
                 case 3:
                     {
                         resultado = num1 * num2;
                         Console.WriteLine($"Seu resultado é: {resultado}");
                     }
                     break;
-               
+
                 case 4:
                     if (num2 != 0)
                     {
@@ -79,13 +78,6 @@
                     break;
             }
         }
-
-
-
-
-
-
-
-        }
     }
+
 
