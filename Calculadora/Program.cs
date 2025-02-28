@@ -38,7 +38,7 @@
 
             // Números solicitados pelo usuario
 
-            Console.Write("Digite o primerio número: ");
+            Console.Write("Digite o primeiro número: ");
             double num1 = double.Parse(Console.ReadLine());
 
             Console.Write("Digite o segundo número: ");
